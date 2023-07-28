@@ -1,0 +1,49 @@
+version: "3.6"
+
+services:
+  apache:
+    image: php:8.2.5-apache
+    container_name: my-apache-app
+    ports:
+    - '8080:80'
+    networks:
+    - db-network
+    volumes:
+    - ./php:/var/www/html
+
+    - type: bind
+      source: ./entrypoint.sh
+      target: /entrypoint.sh
+    entrypoint: '/bin/bash -c "/entrypoint.sh && /bin/bash"'
+    tty: true
+    
+  mysql:
+    image: mysql
+    hostname: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=new_password
+    networks:
+      - db-network
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    ports:
+      - '3306:3306'
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8088:80
+    networks:
+      - db-network
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: new_password
+    restart: unless-stopped
+
+# volumes:
+#   mysql_data:
+
+networks:
+  db-network:
+    driver: bridge
