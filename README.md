@@ -21,7 +21,7 @@ import the `gpttrans.sql` in directory Mysql-data
 
 In the Client-mobile directory, 
 use command `yarn install ` to install node modules.
-use command `react-native start` to start node server, then you may connect your phone to the server ip address, to open the app.
+use command `react-native start` to start node server, then you may build the app on your phone with Xcode.
 
 
 ![1231231](https://github.com/TheInkSpots/ChatGpt-epub-translate-react-native-php-web-server/assets/68689162/786fb195-250f-4705-b363-66fb8c8556d4)
