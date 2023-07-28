@@ -6,9 +6,10 @@ React Native Mobile application
 
 3. Mysql-data
 
-The below software needs to be installed:
-Docker 
-React-native-cli
+The below software needs to be installed on your computer:
+```
+1. Docker 
+2. React-native-cli```
 
 In the server-side directory, there is a `docker-compose.yml`. In this directory 
 use command: `docker-compose -d up`
