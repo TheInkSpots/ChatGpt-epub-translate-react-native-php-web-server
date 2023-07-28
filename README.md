@@ -22,3 +22,9 @@ import the `gpttrans.sql` in directory Mysql-data
 In the Client-mobile directory, 
 use command `yarn install ` to install node modules.
 use command `react-native start` to start node server, then you may connect your phone to the server ip address, to open the app.
+
+
+![1231231](https://github.com/TheInkSpots/ChatGpt-epub-translate-react-native-php-web-server/assets/68689162/786fb195-250f-4705-b363-66fb8c8556d4)
+<img width="122" alt="3331234" src="https://github.com/TheInkSpots/ChatGpt-epub-translate-react-native-php-web-server/assets/68689162/2e056e41-7f63-4290-a607-699ee5d49ef6">
+<img width="116" alt="123123333" src="https://github.com/TheInkSpots/ChatGpt-epub-translate-react-native-php-web-server/assets/68689162/961a7dbb-c534-4cb1-9a62-d6c951bb3153">
+![12312312322](https://github.com/TheInkSpots/ChatGpt-epub-translate-react-native-php-web-server/assets/68689162/f9ead951-c641-4b50-8659-c869250f3066)
