@@ -9,7 +9,8 @@ React Native Mobile application
 The below software needs to be installed on your computer:
 ```
 1. Docker 
-2. React-native-cli```
+2. React-native-cli
+```
 
 In the server-side directory, there is a `docker-compose.yml`. In this directory 
 use command: `docker-compose -d up`
